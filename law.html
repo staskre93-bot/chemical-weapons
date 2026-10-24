@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвенция — Химическое оружие</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Международный запрет</h1>
+            <p>Конвенция КЗХО, роль ОЗХО и методы противохимической защиты</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="types.html" class="nav-link">Классификация</a>
+            <a href="history.html" class="nav-link">История</a>
+            <a href="law.html" class="nav-link active">Конвенция</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        
+        <section class="card">
+            <h2>Конвенция о запрещении химического оружия (КЗХО)</h2>
+            <p><strong>КЗХО</strong> была открыта для подписания в Париже в 1993 году и вступила в силу 29 апреля 1997 года. Это первый в истории договор в области разоружения, который полностью запретил целый класс оружия массового уничтожения под строгим международным контролем.</p>
+            <p style="margin-top: 15px;"><strong>Основные требования Конвенции:</strong></p>
+            <ul style="margin-top: 10px;">
+                <li>Запрет на разработку, производство, накопление, приобретение и передачу ХО.</li>
+                <li>Обязательное уничтожение всех имеющихся запасов химического оружия.</li>
+                <li>Ликвидация или конверсия производственных объектов по выпуску ХО.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Организация по запрещению химического оружия (ОЗХО)</h2>
+            <p>Для реализации положений Конвенции в Гааге (Нидерланды) была создана <strong>ОЗХО (OPCW)</strong>. Организация проводит инспекции химических предприятий и военных объектов по всему миру.</p>
+            <p style="margin-top: 10px;">В 2013 году ОЗХО была удостоена <strong>Нобелевской премии мира</strong> за масштабные усилия по ликвидации мировых химических арсеналов.</p>
+        </section>
+
+        <!-- Кликабельные карточки защиты -->
+        <section class="card">
+            <h2>Средства защиты и дегазации</h2>
+            <p style="margin-bottom: 20px; color: var(--text-muted);">Нажмите на любую карточку ниже, чтобы открыть подробное описание:</p>
+            
+            <div class="grid">
+                <a href="prot-individual.html" class="grid-item category-card">
+                    <h3>Индивидуальная защита &rarr;</h3>
+                    <p>Фильтрующие и изолирующие противогазы, общевойсковые защитные комплекты (ОЗК), костюмы Л-1.</p>
+                </a>
+                
+                <a href="prot-collective.html" class="grid-item category-card">
+                    <h3>Коллективная защита &rarr;</h3>
+                    <p>Убежища и бункеры с фильтровентиляционными установками (ФВУ), создающими избыточное давление.</p>
+                </a>
+                
+                <a href="prot-degassing.html" class="grid-item category-card">
+                    <h3>Дегазация &rarr;</h3>
+                    <p>Нейтрализация и разрушение химических веществ на местности, технике и обмундировании спецрастворами.</p>
+                </a>
+            </div>
+
+            <button id="alertBtn" class="btn-modern" style="margin-top: 25px;">Показать статистику разоружения</button>
+            <div id="factText" class="fact-box hidden"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Учебный проект. Носит исключительно ознакомительный характер.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

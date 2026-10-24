@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Классификация — Химическое оружие</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Делаем карточки визуально кликабельными */
+        .substance-card {
+            cursor: pointer;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        .substance-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent-blue, #38bdf8);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Классификация отравляющих веществ</h1>
+            <p>Деление химического оружия по физиологическому воздействию</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="types.html" class="nav-link active">Классификация</a>
+            <a href="history.html" class="nav-link">История</a>
+            <a href="law.html" class="nav-link">Конвенция</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="card">
+            <h2>Классификация по клиническому воздействию</h2>
+            <p>Боевые <span class="tooltip">ОВ<span class="tooltip-text">Отравляющие вещества — токсичные химические соединения, предназначенные для поражения живой силы.</span></span> подразделяются на несколько основных групп в зависимости от характера поражающего действия на организм человека.</p>
+
+            <!-- Блок с интересным фактом -->
+            <div class="fact-card">
+                <h4>🧪 Случайное открытие зарина</h4>
+                <p>Нервно-паралитический газ зарин был открыт в Германии в 1938 году учеными во главе с Герхардом Шрадером при поиске более эффективных инсектицидов (средств от вредителей).</p>
+            </div>
+
+            <div class="substance-grid">
+                <!-- Карточка 1 -->
+                <div class="substance-card" onclick="if(!event.target.closest('.tooltip')) location.href='type-nerve.html'">
+                    <h4><a href="type-nerve.html" style="color: var(--accent-blue); text-decoration: none;">Нервно-паралитические &rarr;</a></h4>
+                    <p>Поражают центральную нервную систему, вызывают судороги, паралич и удушье. Представители: <span class="tooltip">Зарин<span class="tooltip-text">Летучее жидкостное отравляющее вещество нервно-паралитического действия.</span></span>, Зоман, VX.</p>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="substance-card" onclick="if(!event.target.closest('.tooltip')) location.href='type-blister.html'">
+                    <h4><a href="type-blister.html" style="color: var(--accent-blue); text-decoration: none;">Кожно-нарывные &rarr;</a></h4>
+                    <p>Поражают кожные покровы, глаза и дыхательные пути, вызывая глубокие язвы. Представители: <span class="tooltip">Иприт<span class="tooltip-text">Маслянистая жидкость с запахом чеснока или горчицы.</span></span>, Люизит.</p>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="substance-card" onclick="if(!event.target.closest('.tooltip')) location.href='type-choking.html'">
+                    <h4><a href="type-choking.html" style="color: var(--accent-blue); text-decoration: none;">Удушающие &rarr;</a></h4>
+                    <p>Поражают легочные ткани, вызывая токсический отек легких. Представители: <span class="tooltip">Фосген<span class="tooltip-text">Газ с запахом прелого сена, вызывающий скрытый отек легких.</span></span>, Дифосген.</p>
+                </div>
+
+                <!-- Карточка 4 -->
+                <div class="substance-card" onclick="if(!event.target.closest('.tooltip')) location.href='type-blood.html'">
+                    <h4><a href="type-blood.html" style="color: var(--accent-blue); text-decoration: none;">Общеядовитые &rarr;</a></h4>
+                    <p>Нарушают кислородный обмен в тканях и блокируют клеточное дыхание. Представители: Синильная кислота, Хлорциан.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Учебный проект. Носит исключительно ознакомительный характер.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
